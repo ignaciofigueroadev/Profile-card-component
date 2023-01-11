@@ -1,0 +1,86 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+body {
+    font-size: $fontSize;
+    font-family: $fontKumbhSans;
+    background-color: $darkCyan;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
+}
+
+.container {
+    @include flex(flex, column, center, center);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    @include flex(flex, column, center, center);
+    width: 20em;
+    background-color: $white;
+    border-radius: 1em;
+    
+    &__background {
+        width: 100%;
+        height: 10em;
+        background-image: url(../images/bg-pattern-card.svg);
+        border-radius: 1em 1em 0 0;
+    }
+
+    &__image {
+        margin-top: -2.5em;
+    }
+
+    &__image--profile {
+        width: 5em;
+        border-radius: 50%;
+        border: 4px solid $white;        
+    }
+
+    &__description {
+        width: 100%;
+        text-align: center;
+        padding: 1em;
+        border-bottom: 1px solid #cfcbcb;
+    }
+
+    &__name {
+        color: $darkDesaturatedBlue;
+        font-weight: 700;
+    }
+
+    &__age, &__nationality {
+        color: $darkGray;
+    }
+
+}
+
+.stats {
+    @include flex(flex, row, space-between, center);
+    width: 100%;
+    text-align: center;
+    padding: 1.5em;
+
+    &__number {
+        color: $darkDesaturatedBlue;
+        font-weight: 700;
+    }
+
+    &__characteristics {
+        font-size: .75em;
+        color: $darkGray;
+    }
+}
+
+.attribution {
+    color: $white;
+    font-size: .75em;
+    text-align: center;
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

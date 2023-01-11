@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  font: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+/***********
+margins
+paddings
+**********/
+body,
+button,
+h1, h2, h3, h4, h5, h6,
+input,
+nav,
+select,
+textarea,
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+}
+
+/*********
+hovers
+********/
+a:hover,
+button:hover,
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+/**************
+decorations
+*************/
+a,
+button,
+input,
+select,
+textarea {
+  background: none;
+  color: inherit;
+  border: none;
+  text-transform: none;
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: right 45vw bottom 45vh, 45vw 45vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  background-color: #fff;
+  border-radius: 1em;
+}
+.card__background {
+  width: 100%;
+  height: 10em;
+  background-image: url(../images/bg-pattern-card.svg);
+  border-radius: 1em 1em 0 0;
+}
+.card__image {
+  margin-top: -2.5em;
+}
+.card__image--profile {
+  width: 5em;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+.card__description {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 1px solid #cfcbcb;
+}
+.card__name {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+}
+.card__age, .card__nationality {
+  color: #969696;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em;
+}
+.stats__number {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+}
+.stats__characteristics {
+  font-size: 0.75em;
+  color: #969696;
+}
+
+.attribution {
+  color: #fff;
+  font-size: 0.75em;
+  text-align: center;
+}
+.attribution__link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */
