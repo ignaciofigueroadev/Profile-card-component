@@ -95,7 +95,7 @@ body {
 }
 .card__background {
   width: 100%;
-  height: 10em;
+  height: 7em;
   background-image: url(../images/bg-pattern-card.svg);
   border-radius: 1em 1em 0 0;
 }
@@ -110,10 +110,10 @@ body {
 .card__description {
   width: 100%;
   text-align: center;
-  padding: 1em;
   border-bottom: 1px solid #cfcbcb;
 }
 .card__name {
+  margin-top: 0.75em;
   color: hsl(229deg, 23%, 23%);
   font-weight: 700;
 }
